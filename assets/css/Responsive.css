@@ -1,0 +1,102 @@
+/*--------------------------------------------------------------------------------*/
+/*
+  * This is the Sub style sheet.
+  * This is the style sheet for Media Queries.
+  * It contains Media Screen Queries, properties and values which are used to control the layout and appearance of web page in Specific Screen.
+          content of Style file:-
+           1- @media(max-width: 991px).
+            2- @media(max-width: 767px).
+              3- @media(max-width: 575px).
+*/
+/*---------------------------------------------------------------------------------------*/
+
+
+
+@media(max-width: 991px) {
+    .testimonials__item {
+        width: calc(50% - 30px);
+    }
+
+    .team__item {
+        width: 50%;
+    }
+
+    .team__item:not(:last-child) {
+        margin-bottom: 75px;
+    }
+}
+
+@media(max-width: 767px) {
+    .home-text h1 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .home .row {
+        text-align: center;
+    }
+
+    .hero-img {
+        margin-top: 30px;
+        max-width: 50%;
+    }
+
+    .menu-item,
+    .about-text,
+    .about__images {
+        width: 100%;
+    }
+
+    .menu-item:nth-last-of-type(2):after {
+        border-bottom: 2px dashed var(--dark-light)
+    }
+
+    .about__images {
+        margin-top: 40px;
+    }
+
+    .about-text h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .about-text p {
+        text-align: left;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .testimonials__item {
+        width: calc(100% - 30px);
+    }
+
+    .footer__top--item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer__bottom--copyright {
+        margin: 0 auto 1rem auto;
+        text-align: center;
+    }
+
+    .footer__bottom--menu {
+        width: 100%;
+        padding: 1.5rem;
+        text-align: center;
+        background-color: var(--dark-light);
+    }
+
+}
+
+@media(max-width: 575px) {
+    .team__item {
+        width: 100%;
+    }
+}

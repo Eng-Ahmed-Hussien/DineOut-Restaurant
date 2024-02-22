@@ -1,0 +1,59 @@
+/*--------------------------------------------------------------------------------*/
+/*
+  * This is the Sub style sheet.
+  * This is the style sheet for Animation Key Frames .
+  * It contains Animation Key Frames, properties and values which are used to control the Animation in the layout and appearance of web page.
+          content of Style file:-
+           -Only Animation Key-Frames
+*/
+/*---------------------------------------------------------------------------------------*/
+
+
+
+/* ================================= Animation=====================================*/
+@keyframes zoom-In-Out {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes spin01 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pageLoader {
+
+    0%,
+    100% {
+        transform: rotate(0) scale(0);
+    }
+
+    50% {
+        transform: rotate(360deg) scale(.9);
+
+    }
+}
+
+@keyframes fullHeight {
+
+    0%,
+    100% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+}

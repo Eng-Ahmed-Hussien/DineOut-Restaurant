@@ -1,0 +1,196 @@
+/*--------------------------------------------------------------------------------*/
+/*
+  * This is the Sub style sheet.
+  * It contains Setup basic Style & Common Classes Style =>(properties and values) which are used to control the layout and appearance of web page.
+          content of Style file:-
+           1- Themes' Colors & Themes' Customs Definition.
+            2- Reset All Element Style & Setup basic.
+              3- Common Classes Style Section.
+*/
+/*---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/* ================================= Themes' Colors & Themes' Customs Definition =====================================*/
+:root {
+    --main-color: #eaa023;
+    --sizzling-sunrise: hsl(51, 95%, 54%);
+    --light-color: #ffffff;
+    --light-gray: #dad8d8;
+    --dark-color: #0c1023;
+    --cursive-font: 'Dancing Script', cursive;
+}
+
+
+
+body.dark_theme {
+    --bg-primary: #191f3a;
+    --bg2-primary: #0c1023;
+    --color-primary: #ffffff;
+}
+
+body.light_theme {
+    --bg-primary: #ffffff;
+    --bg2-primary: #ffffff;
+    --color-primary: #191f3a;
+    --boxImg-shadow: 0 0 10px #191f3a;
+}
+
+/* ================================= Reset All Element Style & Setup basic =====================================*/
+*,
+* ::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-primary);
+    transition: all .3s;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+    text-transform: capitalize;
+}
+
+p {
+    line-height: 1.3;
+}
+
+a,
+button,
+input {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* ================================= Common Classes Style =====================================*/
+
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.sec-padding {
+    padding-block: 80px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+section {
+    overflow: hidden;
+}
+
+.section-title {
+    color: var(--color-primary);
+    padding: 0 15px;
+
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.section-title h2::before {
+    content: attr(data-title);
+    display: block;
+    font-size: 24px;
+    color: var(--main-color);
+    font-family: var(--cursive-font);
+
+    text-transform: capitalize;
+}
+
+.main-btn {
+    display: inline-block;
+    background-color: transparent;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--main-color);
+    -webkit-user-select: none;
+    user-select: none;
+    border: none;
+    border: 2px solid var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+    color: var(--color-primary);
+    background-color: var(--main-color);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
